@@ -1,0 +1,25 @@
+.btn-custom {
+  border: none;
+  background-color: var(--bs-body-bg);
+}
+
+.btn-custom:hover {
+  filter: brightness(0.9);
+}
+
+.btn-squareish {
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.btn-rounded {
+  padding: 0.25rem;
+  border-radius: 10rem;
+}
+
+.custom-danger {
+  --bs-btn-bg: #b92b27;
+  --bs-btn-border-color: #851f1c;
+  --bs-btn-hover-bg: #ab2724;
+  --bs-btn-hover-border-color: #b92b27;
+}
