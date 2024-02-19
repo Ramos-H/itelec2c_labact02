@@ -7,6 +7,7 @@ export function MainStuff() {
   return (
     <div className="col-6">
       <PostControls />
+      {/* Conditional Rendering */}
       {posts.map((post, idx) =>
         post.type === "ad" ? (
           <AdPost key={idx} {...post} />

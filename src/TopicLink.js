@@ -14,6 +14,7 @@ export function TopicLink({ title, url, icon, isHot, isNew }) {
         {title}
       </a>
 
+      {/* Conditional Rendering */}
       <span
         className={`badge ms-1 ${isHot && !isNew && "bg-danger"} ${isNew && !isHot && "bg-warning"} ${isHot && isNew && "bg-success"}`}
       >
