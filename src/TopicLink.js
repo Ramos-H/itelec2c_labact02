@@ -1,4 +1,4 @@
-export function TopicLink({ title, url, icon }) {
+export function TopicLink({ title, url, icon, isHot, isNew }) {
   return (
     <button className="btn-custom mb-2 text-start">
       <img
@@ -13,6 +13,14 @@ export function TopicLink({ title, url, icon }) {
       >
         {title}
       </a>
+
+      <span
+        className={`badge ms-1 ${isHot && !isNew && "bg-danger"} ${isNew && !isHot && "bg-warning"} ${isHot && isNew && "bg-success"}`}
+      >
+        {isHot && !isNew && "HOT"}
+        {isNew && !isHot && "NEW"}
+        {isHot && isNew && "TRENDING"}
+      </span>
     </button>
   );
 }

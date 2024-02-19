@@ -10,6 +10,8 @@ export function SideNav() {
           title={topic.title}
           url={topic.url}
           icon={topic.icon}
+          isHot={topic.isHot}
+          isNew={topic.isNew}
         />
       ))}
       <hr />
